@@ -1,0 +1,18 @@
+{
+    "name": "codeigniter/middleware",
+    "type": "l",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Codeigniter\\Middleware\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "EricZhao",
+            "email": "1091588684@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
