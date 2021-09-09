@@ -11,7 +11,7 @@ trait ControlTrait
      *
      * @param mixed $middle
      * @param array $params ['params' => [], 'except' => [], 'only' => []]
-     * @Author EricZhao <1091588684@qq.com>
+     * @Author EricZhao 
      * @DateTime 2021-08-25 11:49
      */
     final public function middleware($middle, $params = [])
@@ -38,7 +38,7 @@ trait ControlTrait
     /**
      * 获取注册的中间件
      *
-     * @Author EricZhao <1091588684@qq.com>
+     * @Author EricZhao 
      * @DateTime 2021-08-25 11:49
      */
     final public function getMiddlewares()
@@ -51,7 +51,7 @@ trait ControlTrait
      *
      * @param string $method
      * @param array $params
-     * @Author EricZhao <1091588684@qq.com>
+     * @Author EricZhao 
      * @DateTime 2021-08-26 14:46
      */
     public function _remap($method, $params)

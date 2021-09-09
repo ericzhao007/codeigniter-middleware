@@ -3,7 +3,7 @@ namespace Codeigniter\Middleware;
 /**
  * 扩展CI增加中间件功能
  *
- * @Author EricZhao <1091588684@qq.com>
+ * @Author EricZhao 
  * @DateTime 2021-08-26 16:38
  */
 class Middleware
@@ -19,7 +19,7 @@ class Middleware
      *
      * @param string $name method
      * @param array $arguments url path
-     * @Author EricZhao <1091588684@qq.com>
+     * @Author EricZhao 
      * @DateTime 2021-08-26 16:36
      */
     public function start($name, $arguments)
@@ -45,7 +45,7 @@ class Middleware
      * 输出
      *
      * @param mixed $reponse
-     * @Author EricZhao <1091588684@qq.com>
+     * @Author EricZhao 
      * @DateTime 2021-08-26 18:04
      */
     public function output($reponse){
@@ -60,7 +60,7 @@ class Middleware
      * 获取可执行中间件
      *
      * @param string $method 控制器方法
-     * @Author EricZhao <1091588684@qq.com>
+     * @Author EricZhao 
      * @DateTime 2021-08-25 11:47
      */
     public function getMiddlewares($method)
@@ -88,7 +88,7 @@ class Middleware
      * @param array $middlewares
      * @param Closure $control
      * @return mixed
-     * @Author EricZhao <1091588684@qq.com>
+     * @Author EricZhao 
      * @DateTime 2021-08-25 11:46
      */
     public function invokeMiddlewares(array $middlewares, \Closure $control)
@@ -103,7 +103,7 @@ class Middleware
      *
      * @param array $middle
      * @param Closure $next
-     * @Author EricZhao <1091588684@qq.com>
+     * @Author EricZhao 
      * @DateTime 2021-08-25 11:46
      */
     public function packMiddleware($next, $middle)
