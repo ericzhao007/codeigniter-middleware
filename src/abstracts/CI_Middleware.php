@@ -4,7 +4,7 @@ namespace Codeigniter\Middleware\Abstracts;
 /**
  * 中间件基类
  *
- * @Author zhaoxinwei
+ * @Author EricZhao <1091588684@qq.com>
  * @DateTime 2021-08-26 17:20
  */
 abstract class CI_Middleware
