@@ -27,7 +27,8 @@ trait ControlTrait
             $params['name'] = $middle;
             $this->middlewares[] = $params;
         }else{
-            $name = end(explode('/', $middle));
+            $middle_args = explode('/', $middle);
+            $name = end($middle_args);
             $this->load->middleware($middle, $name);
             $params['name'] = $name;
             $this->middlewares[] = $params;
