@@ -1,5 +1,5 @@
 <?php
-namespace codeigniter;
+namespace Codeigniter\Middleware;
 /**
  * 扩展CI增加中间件功能
  *

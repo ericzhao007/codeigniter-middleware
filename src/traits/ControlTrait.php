@@ -1,5 +1,5 @@
 <?php
-namespace codeigniter\traits;
+namespace Codeigniter\Middleware\Traits;
 
 trait ControlTrait
 {
