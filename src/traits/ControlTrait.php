@@ -55,7 +55,7 @@ trait ControlTrait
      */
     public function _remap($method, $params)
     {        
-        $middleware = new \codeigniter\Middleware($this);
+        $middleware = new \Codeigniter\Middleware\Middleware($this);
         $middleware->start($method, $params);
     }
 }
