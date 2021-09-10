@@ -2,9 +2,9 @@
 
 > CI2框架中间件实现   
 
-### 1. 在控制器中加入
+### 1. 在自己的控制器基类中加入以下
 ```php
-class Test extends CI_Controller
+class MY_Controller extends CI_Controller
 {
     use Codeigniter\Middleware\Traits\ControlTrait;
 }
