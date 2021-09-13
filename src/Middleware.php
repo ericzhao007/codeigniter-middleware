@@ -113,10 +113,9 @@ class Middleware
             if($name instanceof \Closure){
                 return $name($next);
             }else{
-                $CI =& get_instance();
-                $params = $middle['params'];
+                $params = $middle['params'];                
                 array_unshift($params, $next);
-                return call_user_func_array([$CI->$name, 'handle'], $params);
+                return call_user_func_array([$this->controller->$name, 'handle'], $params);
             }            
         };
     }

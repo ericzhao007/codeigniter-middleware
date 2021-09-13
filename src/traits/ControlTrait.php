@@ -3,7 +3,7 @@ namespace Codeigniter\Middleware\Traits;
 
 trait ControlTrait
 {
-    private $middlewares = [];
+    private $_middlewares = [];
 
     /**
      * 注册中间件
@@ -14,7 +14,7 @@ trait ControlTrait
      * @Author EricZhao 
      * @DateTime 2021-08-25 11:49
      */
-    final public function middleware($middle, $params = [])
+    final protected function middleware($middle, $params = [])
     {
         $default_params = [
             'params' => [],     // 中间件参数
@@ -25,13 +25,13 @@ trait ControlTrait
         // 支持匿名函数
         if($middle instanceof \Closure){
             $params['name'] = $middle;
-            $this->middlewares[] = $params;
+            $this->_middlewares[] = $params;
         }else{
             $middle_args = explode('/', $middle);
             $name = end($middle_args);
             $this->load->middleware($middle, $name);
             $params['name'] = $name;
-            $this->middlewares[] = $params;
+            $this->_middlewares[] = $params;
         }
     }
 
@@ -43,7 +43,7 @@ trait ControlTrait
      */
     final public function getMiddlewares()
     {
-        return $this->middlewares;
+        return $this->_middlewares;
     }
 
     /**

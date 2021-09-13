@@ -2,19 +2,19 @@
 
 > CI2框架中间件实现   
 
-### 1. 在自己的控制器基类中加入以下
+### 1. 在自己的控制器基类中继承中间件Controller
 ```php
-class MY_Controller extends CI_Controller
+class MY_Controller extends Codeigniter\Middleware\CM_Controller
 {
-    use Codeigniter\Middleware\Traits\ControlTrait;
+
 }
 ```
 
-### 2. 在框架应用目录的`core`下创建自己的[subclass_prefix]_Loader.php
+### 2. 在框架应用目录的`core`下创建自己的[subclass_prefix]_Loader.php 并继承中间件Loader
 ```php
-class MY_Loader extends CI_Loader
+class MY_Loader extends Codeigniter\Middleware\CM_Loader
 {
-    use Codeigniter\Middleware\Traits\LoaderTrait;
+
 }
 ```
 
