@@ -3,7 +3,7 @@ namespace Codeigniter\Middleware\Traits;
 
 trait ControlTrait
 {
-    private $_middlewares = [];
+    private $_middlewares = []; 
 
     /**
      * 注册中间件
